@@ -6,12 +6,7 @@ Infix to Postfix expression using stack
 #include<bits/stdc++.h>
 #include<stack>
 using namespace std;
-
-
- // } Driver Code Ends
-
-
-    int prec(char ch){
+int prec(char ch){
     if(ch == '^')
         return 3;
     else if (ch == '*' || ch == '/')
@@ -20,9 +15,7 @@ using namespace std;
         return 1;
     else return -1;
    }
-    
-    string infixToPostfix(string s)
-    {
+   string infixToPostfix(string s){
     stack<char> st;
     string result = "";
     char ch;
@@ -60,8 +53,6 @@ using namespace std;
     return result;
     }
 };
-
-
 int main()
 {
     int t;

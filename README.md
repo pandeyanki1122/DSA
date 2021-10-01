@@ -7,6 +7,7 @@ Infix to Postfix expression using stack
 #include<bits/stdc++.h>
 #include<stack>
 using namespace std;
+    
 int prec(char ch){
     if(ch == '^')
         return 3;
@@ -16,6 +17,7 @@ int prec(char ch){
         return 1;
     else return -1;
    }
+    
    string infixToPostfix(string s){
     stack<char> st;
     string result = "";
@@ -54,6 +56,7 @@ int prec(char ch){
     return result;
     }
 };
+                                                               
 int main()
 {
     int t;

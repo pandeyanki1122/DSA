@@ -20,7 +20,7 @@ using namespace std;
         return 1;
     else return -1;
    }
-    //Function to convert an infix expression to a postfix expression.
+    
     string infixToPostfix(string s)
     {
     stack<char> st;
